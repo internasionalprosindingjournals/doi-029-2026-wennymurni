@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Article | Jurnal Kesehatan Tambusai</title>
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f2f2f2;
+}
+
+/* HEADER */
+
+.header{
+background:#2f638c;
+padding:10px 0;
+}
+
+.header-top{
+width:1100px;
+max-width:95%;
+margin:auto;
+display:flex;
+justify-content:flex-end;
+font-size:14px;
+color:white;
+}
+
+.header-top a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+}
+
+.header-container{
+width:1100px;
+max-width:95%;
+margin:auto;
+display:flex;
+align-items:center;
+padding-top:5px;
+}
+
+.header img{
+height:75px;
+width:auto;
+}
+
+/* MENU */
+
+.menu{
+background:#2f638c;
+padding:10px 0;
+}
+
+.menu .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-right:25px;
+font-size:14px;
+}
+
+/* CONTAINER */
+
+.container{
+width:1100px;
+max-width:95%;
+margin:auto;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb{
+font-size:13px;
+margin:20px 0;
+color:#777;
+}
+
+/* MAIN LAYOUT */
+
+.layout{
+display:grid;
+grid-template-columns:3fr 1fr;
+gap:30px;
+}
+
+/* ARTICLE */
+
+.article{
+background:white;
+border:1px solid #ddd;
+padding:25px;
+}
+
+/* TITLE */
+
+.title{
+font-size:28px;
+font-weight:bold;
+line-height:1.4;
+margin-bottom:25px;
+}
+
+/* META */
+
+.meta{
+display:grid;
+grid-template-columns:2fr 1fr;
+border-top:1px solid #ddd;
+margin-top:20px;
+}
+
+.left{
+padding:20px 0;
+}
+
+.right{
+border-left:1px solid #ddd;
+padding:20px;
+background:#fafafa;
+}
+
+.pdf{
+display:inline-block;
+border:1px solid #2f638c;
+padding:6px 15px;
+color:#2f638c;
+text-decoration:none;
+font-size:13px;
+margin-bottom:15px;
+}
+
+.meta-box{
+font-size:13px;
+margin-bottom:15px;
+}
+
+.author{
+font-weight:bold;
+margin-top:10px;
+}
+
+.affiliation{
+font-size:13px;
+color:#666;
+margin-bottom:5px;
+}
+
+.keywords{
+margin-top:15px;
+font-size:14px;
+}
+
+.abstract{
+margin-top:20px;
+line-height:1.7;
+font-size:14px;
+}
+
+.references{
+margin-top:20px;
+font-size:14px;
+line-height:1.7;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+background:white;
+border:1px solid #ddd;
+padding:20px;
+height:fit-content;
+}
+
+.sidebar a{
+display:block;
+text-decoration:none;
+color:#2f638c;
+margin-bottom:10px;
+font-size:14px;
+}
+
+/* VISITOR */
+
+.visitor{
+margin-top:20px;
+border:1px solid #cfcfcf;
+padding:10px;
+background:#eeeeee;
+font-size:13px;
+}
+
+.visitor-title{
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.visitor-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:6px 20px;
+}
+
+.visitor-item{
+display:flex;
+align-items:center;
+}
+
+.visitor-item img{
+width:18px;
+margin-right:6px;
+}
+
+.pageviews{
+margin-top:10px;
+}
+
+/* TEMPLATE */
+
+.template{
+margin-top:25px;
+text-align:center;
+}
+
+.template img{
+width:130px;
+}
+
+.template a{
+text-decoration:none;
+color:#2f638c;
+font-weight:bold;
+}
+
+/* CERTIFICATE */
+
+.certificate{
+margin-top:25px;
+text-align:center;
+}
+
+.certificate img{
+width:100%;
+max-width:220px;
+}
+
+/* SINTA */
+
+.sinta{
+margin-top:20px;
+text-align:center;
+}
+
+.sinta img{
+width:170px;
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:40px;
+background:#e9e9e9;
+padding:40px 0;
+}
+
+.footer-container{
+width:1100px;
+max-width:95%;
+margin:auto;
+display:flex;
+justify-content:flex-end;
+align-items:center;
+}
+
+.footer-text{
+text-align:right;
+color:#444;
+font-size:18px;
+line-height:1.4;
+}
+
+.footer-text span{
+display:block;
+font-size:34px;
+font-weight:300;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<div class="header-top">
+<a href="#">Register</a>
+<a href="#">Login</a>
+</div>
+
+<div class="header-container">
+<img src="header-jurnal.jpg" alt="Jurnal Kesehatan Tambusai">
+</div>
+
+</div>
+
+<!-- MENU -->
+
+<div class="menu">
+<div class="container">
+
+<div>
+<a href="#">Current</a>
+<a href="#">Archives</a>
+<a href="#">Announcements</a>
+<a href="#">About</a>
+</div>
+
+<div>
+<a href="#">Search</a>
+</div>
+
+</div>
+</div>
+
+
+<div class="container">
+
+<div class="breadcrumb">
+Home / Archives / Vol 7 No.1 (2026): MARET 2026 / Articles
+</div>
+
+<div class="layout">
+
+<!-- ARTICLE -->
+
+<div class="article">
+
+<div class="title">
+HUBUNGAN ANTARA TINGKAT MOTIVASI BELAJAR TERHADAP INTENSITAS PENGGUNAAN GADGET PADA REMAJA DI SMP PELITA ALAM KOTA BEKASI
+</div>
+
+<div class="meta">
+
+<div class="left">
+
+<div class="author">Nilla Navilla</div>
+<div class="affiliation">
+Sekolah Tinggi Ilmu Kesehatan RS Husada, Jakarta
+</div>
+
+<div class="author">Tri Setyaningsih</div>
+<div class="affiliation">
+Sekolah Tinggi Ilmu Kesehatan RS Husada, Jakarta
+</div>
+
+<div class="author">Dian Fitria</div>
+<div class="affiliation">
+Sekolah Tinggi Ilmu Kesehatan RS Husada, Jakarta
+</div>
+
+<br>
+
+<b>DOI:</b>
+<a href="#">https://doi.org/10.31004/jkt.v7i1.56508044</a>
+
+<div class="keywords">
+<b>Keywords:</b> Kecemasan, Kualitas Tidur, Mahasiswa, Skripsi
+</div>
+
+<div class="abstract">
+
+<h3>Abstract</h3>
+
+Remaja merupakan kelompok usia yang rentan terhadap pengaruh negatif penggunaan gadget secara berlebihan, yang dapat memengaruhi motivasi belajar mereka. Penelitian ini  bertujuan untuk mengetahui hubungan antara tingkat motivasi belajar terhadap intensitas penggunaan gadget pada remaja di SMP Pelita Alam Kota Bekasi. Penelitian ini menggunakan desain kuantitatif dengan pendekatan cross-sectional. Sampel berjumlah 84 siswa yang dipilih dengan teknik total sampling. Instrumen yang digunakan berupa kuesioner motivasi belajar dan intensitas penggunaan gadget yang telah diuji validitas dan reliabilitasnya. Uji validitas dilakukan terhadap 30 responden dan seluruh item dinyatakan valid. Uji reliabilitas menunjukkan nilai Cronbach’s Alpha sebesar
+0,876 untuk motivasi belajar dan 0,842 untuk intensitas penggunaan gadget. Hasil analisis menggunakan uji Spearman’s rho menunjukkan terdapat hubungan yang signifikan antara tingkat motivasi belajar  dengan intensitas penggunaan gadget  (p-value =  0,004  <  α  =  0,05).  Dapat disimpulkan bahwa semakin tinggi intensitas penggunaan gadget, maka semakin rendah motivasi belajar pada remaja.
+
+
+</div>
+
+<div class="references">
+
+<h3>References</h3>
+
+Andiani, S., & Udijono, A. (2024). Media Kesehatan Masyarakat Indonesia Hubungan Stres , Kecemasan , dan Depresi dengan Gangguan Tidur pada Mahasiswa Universitas Diponegoro. 2024(23), 180–186.
+
+Ardiansyah, S., Yunike, Ardiansyah, S., Tribakti, I., Suprapto, Saripah, E., Febriani, I., Zakiyah, Kuntoadi, G. B., Muji, R., Kusumawaty, I., Narulita, S., Juwariah, T., Akhriansyah, M., Putra, E. S., & Kurnia, H. (2023). Buku Ajar Kesehatan Mental.
+
+Dharma, K. K. (2021). METODOLOGI PENELITIAN KEPERAWATAN. Trans Info Media. Fatonah, N. S., Siddiq, T. B., & Caecielia Makaginsar. (2023). Pengaruh Tingkat Kecemasan terhadap Kualitas Tidur pada Mahasiswa yang Sedang Menyusun Skripsi.  Jurnal Riset Kedokteran, 83–90. https://doi.org/10.29313/jrk.v3i2.2957
+
+Abdu, S., Saranga’, J. L., Sulu, V., & Wahyuni, R. (2021). Dampak Penggunaan Gadget Terhadap Penurunan Ketajaman Penglihatan. Jurnal Keperawatan Florence Nightingale, 4(1), 24–30. https://doi.org/10.52774/jkfn.v4i1.59
+
+Abduh, M., Alawiyah, T., Apriansyah, G., Sirodj, R. A., & Afgan, M. W. (2023). Survey Design: Cross Sectional dalam Penelitian Kualitatif. Jurnal Ilmiah Ilmu Terapan Universitas Jambi, 3(1), 31–38. https://doi.org/10.22437/jiituj.v5i1.12886
+
+Adhetya Cahyani, Iin Diah Listiana, S. P. D. L. (2020). Motivasi Belajar Siswa Man Binjai Pada Pembelajaran Daring Di Masa Pandemi Covid-19. Jurnal Pendidikan Islam, 3(1), 123–140. https://doi.org/10.58432/algebra.v2i3.570
+
+Ahmad,  E.  H.,  Makkasau,  &  Fitriani.  (2023).  Metodologi  Penelitian  Kesehatan. Makassar: Rizmedia Pustaka Indonesia.
+
+Alfonso, A. (2021). Motivasi belajar peserta didik jenjang pendidikan dasar daerah 3T kabupaten bengkayang di masa pandemi covid-19. Jurnal Pendidikan Informatika Dan Sains, 10(2), 133–143. https://doi.org/10.31571/saintek.v10i2.3379
+
+Fitriana. (2020). pengaruh Penggunaan Gadget Terhadap Perilaku Perilaku Remaja dalam Keluarga. Jurnal Psikoislamedia, 5(2).
+
+Juliani,  I.  R.,  & Wulandari,  I.  S.  M.  (2022).  Hubungan  Tingkat  Kecanduan Gadget dengan Gangguan Emosi dan Perilaku Remaja Kelas 8. Jurnal Keperawatan BSI, 10(1), 30–40.
+
+Julmiran, A. (2024). Hubungan Durasi Penggunaan Gadget dengan Prestasi Siswa Kelas V Sekolah Dasar. Didaktika: Jurnal Kependidikan, 13(1), 1011–1018.
+
+Mohamad Sabda Fariz Akbar, Ridwan Fauzi, Zaqi Abdillah Tsamanyah, A. M. (2022). Pengaruh Penggunaan Gadget Dalam Kegiatan Belajar Dan Mengajar Terhadap Pembentukan  Karakter  Anak Generasi  Z.  Jurnal  Pendidikan  Dasar  Dan  Sosial Humaniora, 2(2), 375–384.
+
+Nikmah, 2013:2. (2025). Pengaruh gadget terhadap motivasi belajar.
+
+Oktavianus Katiandagho, A. (2023). Pengaruh Gadget Terhadap Motivasi Belajar Siswa Di Sekolah Menengah Pertama Negeri 1 Siau Barat Selatan. BONAFIDE: Jurnal Teologi Dan Pendidikan Kristen, 4(2), 351–368. https://doi.org/10.46558/bonafide.v4i2.211
+
+Rismala,  Y.,  Aguswan,  Priyantoro,  D.  E.,  &  Suryadi.  (2021).  Dampak  Penggunaan Gadget Terhadap Perkembangan Sosial Anak Usia Dini. Jurnal Kajian Ilmu Pendidikan Anak, 1(01), 46–55. https://doi.org/10.56872/elathfal.v1i01.273
+
+Sajdah, M., Uyun, M., Isnaini, M., & Defnaldi, D. (2023). The Effect of Gadget Management on Student’s Learning Motivation. JMKSP (Jurnal Manajemen, Kepemimpinan, Dan Supervisi Pendidikan), 8(1), 312–328. https://doi.org/10.31851/jmksp.v8i1.11158
+
+Sutriawa, A. (2023). Motivasi Mahasiswa Dalam Pembelajaran Atletik. 
+
+Yeni, D. F., Putri, S. L., & Setiawati, M. (2022). Pengaruh Motivasi Belajar Siswa Terhadap Hasil Belajar Siswa Smp N 1 X Koto Diatas. PROMOSI (Jurnal Pendidikan Ekonomi), 10(2), 133–140. https://doi.org/10.24127/pro.v10i2.6591
+
+
+
+</div>
+
+</div>
+
+<div class="right">
+
+<a href="https://drive.google.com/file/d/19j0G2niaWLGeWp85p-haU0BHrMXeQR3g/view?usp=sharing" target="_blank" class="pdf">PDF</a>
+
+<div class="meta-box">
+<b>Published</b><br>
+2026-03-15
+</div>
+
+<div class="meta-box">
+<b>Issue</b><br>
+Vol 7 No.1 (2026)
+</div>
+
+<div class="meta-box">
+<b>Section</b><br>
+Articles
+</div>
+
+<div class="meta-box">
+<b>License</b><br>
+Creative Commons Attribution
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<a href="#">Editorial Team</a>
+<a href="#">Peer Reviewers</a>
+<a href="#">Focus & Scope</a>
+<a href="#">Author Guidelines</a>
+<a href="#">Author Fees</a>
+<a href="#">Publication Ethics</a>
+<a href="#">Open Access Policy</a>
+<a href="#">Peer Review Process</a>
+<a href="#">Article Processing Charges</a>
+<a href="#">Screening Plagiarism</a>
+<a href="#">Journal license</a>
+<a href="#">Abstracting & Indexing</a>
+<a href="#">Contact Us</a>
+
+<div class="visitor">
+
+<div class="visitor-title">Visitors</div>
+
+<div class="visitor-grid">
+
+<div class="visitor-item"><img src="https://flagcdn.com/w20/id.png"> ID 901</div>
+<div class="visitor-item"><img src="https://flagcdn.com/w20/in.png"> IN 4</div>
+
+<div class="visitor-item"><img src="https://flagcdn.com/w20/us.png"> US 72</div>
+<div class="visitor-item"><img src="https://flagcdn.com/w20/de.png"> DE 3</div>
+
+<div class="visitor-item"><img src="https://flagcdn.com/w20/jp.png"> JP 11</div>
+<div class="visitor-item"><img src="https://flagcdn.com/w20/tw.png"> TW 2</div>
+
+<div class="visitor-item"><img src="https://flagcdn.com/w20/cn.png"> CN 6</div>
+<div class="visitor-item"><img src="https://flagcdn.com/w20/sg.png"> SG 1</div>
+
+<div class="visitor-item"><img src="https://flagcdn.com/w20/ru.png"> RU 4</div>
+<div class="visitor-item"><img src="https://flagcdn.com/w20/au.png"> AU 1</div>
+
+</div>
+
+<div class="pageviews">
+Pageviews: 3,164
+</div>
+
+</div>
+
+<div class="template">
+<a href="https://docs.google.com/document/d/1uEqnu7UHKpZd1oOBuMiCMXQr88rf97aO/edit" target="_blank">
+<img src="template.png">
+<p>Download Journal Template</p>
+</a>
+</div>
+
+<div class="certificate">
+<img src="sertifikat-sinta.png" alt="Sertifikat Akreditasi">
+</div>
+
+<div class="sinta">
+<img src="sinta-s5.jpg" alt="Sinta S5">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="footer-container">
+
+<div class="footer-text">
+Platform & workflow by
+<span>OJS / PKP</span>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
